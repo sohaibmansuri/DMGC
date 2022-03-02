@@ -15,7 +15,7 @@ def get_data(db):
 
 def draw0_with_centers(data, labels, center):
 	labels = labels -1
-	tsne = TSNE(n_components=2, init='pca', random_state=0)
+	tsne = TSNE(n_components=3, init='pca', random_state=0)
 	n_instance_0 = data.shape[0]
 
 	data = np.concatenate((data,center),axis=0)   
